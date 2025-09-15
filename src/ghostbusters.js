@@ -15,14 +15,14 @@ const add_ghost = (ghost) => {
 });
 };
 
-const set_DANGER_LEVEL = (name, level) => {
+const setDangerLevel = (name, level) => {
   const ghost = ghostReports.find((g) => g.name === name);
   if (ghost) {
     ghost.dangerLevel = level;
   }
 };
 
-const CAPTUREGHOST3 = (name) => {
+const captureGhost = (name) => {
   const ghost = ghostReports.find((g) => g.name === name);
   if (ghost) {
       ghost.captured = true;
