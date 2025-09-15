@@ -15,7 +15,7 @@ const addGhost = (ghost) => {
 });
 };
 
-const set_DANGER_LEVEL = (name, level) => {
+const setDangerLevel = (name, level) => {
   const ghost = ghostReports.find((g) => g.name === name);
   if (ghost) {
     ghost.dangerLevel = level;
